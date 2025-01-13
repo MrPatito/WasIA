@@ -45,7 +45,7 @@ class Neo4jConnection:
                 max_connection_pool_size=max_pool_size
             )
             
-            # Verify connection
+            # Verify connection and create constraints
             try:
                 self._driver.verify_connectivity()
                 self._setup_database()
