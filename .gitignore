@@ -21,8 +21,11 @@ wheels/
 *.egg
 
 # Virtual Environment
-venv/
 .env
+.venv
+env/
+venv/
+ENV/
 
 # IDE
 .idea/
@@ -31,9 +34,23 @@ venv/
 *.swo
 
 # Project specific
-data/
+temp/
 logs/
-uploads/
+*.log
+.env
+.env.*
+!.env.template
 
 # Docker
 .docker/
+docker-compose.override.yml
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# System
+.DS_Store
+Thumbs.db
