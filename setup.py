@@ -1,0 +1,30 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="wasia",
+    version="0.1",
+    packages=find_packages(),
+    install_requires=[
+        'fastapi>=0.104.1',
+        'uvicorn>=0.24.0',
+        'python-multipart>=0.0.6',
+        'python-dotenv>=1.0.0',
+        'neo4j>=5.13.0',
+        'langchain>=0.0.340',
+        'openai>=1.3.5',
+        'tiktoken>=0.5.1',
+        'PyPDF2>=3.0.1',
+        'pytesseract>=0.3.10',
+        'Pillow>=10.1.0',
+        'redis>=5.0.1',
+        'pika>=1.3.2',
+        'sentence-transformers>=2.2.2',
+        'torch>=2.1.0',
+        'transformers>=4.35.0',
+        'whisper>=1.1.10',
+        'accelerate>=0.24.1',
+        'safetensors>=0.4.0',
+        'psutil>=5.9.6',
+        'numpy>=1.24.0'
+    ],
+)
